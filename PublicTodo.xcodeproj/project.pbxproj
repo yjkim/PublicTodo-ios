@@ -8,12 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		94078CFE1C2404F600CABB42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94078CFD1C2404F600CABB42 /* AppDelegate.swift */; };
-		94078D001C2404F600CABB42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94078CFF1C2404F600CABB42 /* ViewController.swift */; };
 		94078D031C2404F600CABB42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94078D011C2404F600CABB42 /* Main.storyboard */; };
 		94078D051C2404F600CABB42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94078D041C2404F600CABB42 /* Assets.xcassets */; };
 		94078D081C2404F600CABB42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94078D061C2404F600CABB42 /* LaunchScreen.storyboard */; };
 		94078D131C2404F600CABB42 /* PublicTodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94078D121C2404F600CABB42 /* PublicTodoTests.swift */; };
 		94078D1E1C2404F600CABB42 /* PublicTodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94078D1D1C2404F600CABB42 /* PublicTodoUITests.swift */; };
+		94078D2F1C24058500CABB42 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94078D2E1C24058500CABB42 /* TodoListViewController.swift */; };
+		94078D301C24058500CABB42 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94078D2E1C24058500CABB42 /* TodoListViewController.swift */; };
+		94078D311C24058500CABB42 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94078D2E1C24058500CABB42 /* TodoListViewController.swift */; };
+		94078D3B1C24062700CABB42 /* Dobby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94078D381C24061A00CABB42 /* Dobby.framework */; };
+		94078D3C1C24062700CABB42 /* Dobby.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94078D381C24061A00CABB42 /* Dobby.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		94078D411C2407AC00CABB42 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94078D401C2407AC00CABB42 /* MenuViewController.swift */; };
+		94078D421C2407AC00CABB42 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94078D401C2407AC00CABB42 /* MenuViewController.swift */; };
+		94078D431C2407AC00CABB42 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94078D401C2407AC00CABB42 /* MenuViewController.swift */; };
+		94078D451C24084900CABB42 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94078D441C24084900CABB42 /* AddTaskViewController.swift */; };
+		94078D461C24084900CABB42 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94078D441C24084900CABB42 /* AddTaskViewController.swift */; };
+		94078D471C24084900CABB42 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94078D441C24084900CABB42 /* AddTaskViewController.swift */; };
+		94078D491C2408AE00CABB42 /* DetailTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94078D481C2408AE00CABB42 /* DetailTaskViewController.swift */; };
+		94078D4A1C2408AE00CABB42 /* DetailTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94078D481C2408AE00CABB42 /* DetailTaskViewController.swift */; };
+		94078D4B1C2408AE00CABB42 /* DetailTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94078D481C2408AE00CABB42 /* DetailTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +44,46 @@
 			remoteGlobalIDString = 94078CF91C2404F600CABB42;
 			remoteInfo = PublicTodo;
 		};
+		94078D371C24061A00CABB42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94078D321C24061A00CABB42 /* Dobby.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9467379D1B9AD7A100BF4543;
+			remoteInfo = Dobby;
+		};
+		94078D391C24061A00CABB42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94078D321C24061A00CABB42 /* Dobby.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 946737A81B9AD7A100BF4543;
+			remoteInfo = DobbyTests;
+		};
+		94078D3D1C24062700CABB42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94078D321C24061A00CABB42 /* Dobby.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9467379C1B9AD7A100BF4543;
+			remoteInfo = Dobby;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		94078D3F1C24062700CABB42 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				94078D3C1C24062700CABB42 /* Dobby.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		94078CFA1C2404F600CABB42 /* PublicTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PublicTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94078CFD1C2404F600CABB42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94078CFF1C2404F600CABB42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		94078D021C2404F600CABB42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94078D041C2404F600CABB42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94078D071C2404F600CABB42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +94,11 @@
 		94078D191C2404F600CABB42 /* PublicTodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PublicTodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94078D1D1C2404F600CABB42 /* PublicTodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicTodoUITests.swift; sourceTree = "<group>"; };
 		94078D1F1C2404F600CABB42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94078D2E1C24058500CABB42 /* TodoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
+		94078D321C24061A00CABB42 /* Dobby.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Dobby.xcodeproj; path = dobby/Dobby.xcodeproj; sourceTree = "<group>"; };
+		94078D401C2407AC00CABB42 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		94078D441C24084900CABB42 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		94078D481C2408AE00CABB42 /* DetailTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94078D3B1C24062700CABB42 /* Dobby.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +130,7 @@
 		94078CF11C2404F600CABB42 = {
 			isa = PBXGroup;
 			children = (
+				94078D321C24061A00CABB42 /* Dobby.xcodeproj */,
 				94078CFC1C2404F600CABB42 /* PublicTodo */,
 				94078D111C2404F600CABB42 /* PublicTodoTests */,
 				94078D1C1C2404F600CABB42 /* PublicTodoUITests */,
@@ -97,8 +151,10 @@
 		94078CFC1C2404F600CABB42 /* PublicTodo */ = {
 			isa = PBXGroup;
 			children = (
+				94078D2B1C24055C00CABB42 /* model */,
+				94078D2D1C24055C00CABB42 /* viewmodel */,
+				94078D2C1C24055C00CABB42 /* view */,
 				94078CFD1C2404F600CABB42 /* AppDelegate.swift */,
-				94078CFF1C2404F600CABB42 /* ViewController.swift */,
 				94078D011C2404F600CABB42 /* Main.storyboard */,
 				94078D041C2404F600CABB42 /* Assets.xcassets */,
 				94078D061C2404F600CABB42 /* LaunchScreen.storyboard */,
@@ -125,6 +181,40 @@
 			path = PublicTodoUITests;
 			sourceTree = "<group>";
 		};
+		94078D2B1C24055C00CABB42 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		94078D2C1C24055C00CABB42 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				94078D2E1C24058500CABB42 /* TodoListViewController.swift */,
+				94078D401C2407AC00CABB42 /* MenuViewController.swift */,
+				94078D441C24084900CABB42 /* AddTaskViewController.swift */,
+				94078D481C2408AE00CABB42 /* DetailTaskViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		94078D2D1C24055C00CABB42 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		94078D331C24061A00CABB42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94078D381C24061A00CABB42 /* Dobby.framework */,
+				94078D3A1C24061A00CABB42 /* DobbyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +225,12 @@
 				94078CF61C2404F600CABB42 /* Sources */,
 				94078CF71C2404F600CABB42 /* Frameworks */,
 				94078CF81C2404F600CABB42 /* Resources */,
+				94078D3F1C24062700CABB42 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				94078D3E1C24062700CABB42 /* PBXTargetDependency */,
 			);
 			name = PublicTodo;
 			productName = PublicTodo;
@@ -215,6 +307,12 @@
 			mainGroup = 94078CF11C2404F600CABB42;
 			productRefGroup = 94078CFB1C2404F600CABB42 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 94078D331C24061A00CABB42 /* Products */;
+					ProjectRef = 94078D321C24061A00CABB42 /* Dobby.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				94078CF91C2404F600CABB42 /* PublicTodo */,
@@ -223,6 +321,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		94078D381C24061A00CABB42 /* Dobby.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Dobby.framework;
+			remoteRef = 94078D371C24061A00CABB42 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		94078D3A1C24061A00CABB42 /* DobbyTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DobbyTests.xctest;
+			remoteRef = 94078D391C24061A00CABB42 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		94078CF81C2404F600CABB42 /* Resources */ = {
@@ -256,8 +371,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94078D001C2404F600CABB42 /* ViewController.swift in Sources */,
+				94078D2F1C24058500CABB42 /* TodoListViewController.swift in Sources */,
+				94078D451C24084900CABB42 /* AddTaskViewController.swift in Sources */,
+				94078D411C2407AC00CABB42 /* MenuViewController.swift in Sources */,
 				94078CFE1C2404F600CABB42 /* AppDelegate.swift in Sources */,
+				94078D491C2408AE00CABB42 /* DetailTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +383,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94078D301C24058500CABB42 /* TodoListViewController.swift in Sources */,
+				94078D461C24084900CABB42 /* AddTaskViewController.swift in Sources */,
+				94078D421C2407AC00CABB42 /* MenuViewController.swift in Sources */,
 				94078D131C2404F600CABB42 /* PublicTodoTests.swift in Sources */,
+				94078D4A1C2408AE00CABB42 /* DetailTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +395,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94078D311C24058500CABB42 /* TodoListViewController.swift in Sources */,
+				94078D471C24084900CABB42 /* AddTaskViewController.swift in Sources */,
+				94078D431C2407AC00CABB42 /* MenuViewController.swift in Sources */,
 				94078D1E1C2404F600CABB42 /* PublicTodoUITests.swift in Sources */,
+				94078D4B1C2408AE00CABB42 /* DetailTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +415,11 @@
 			isa = PBXTargetDependency;
 			target = 94078CF91C2404F600CABB42 /* PublicTodo */;
 			targetProxy = 94078D1A1C2404F600CABB42 /* PBXContainerItemProxy */;
+		};
+		94078D3E1C24062700CABB42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Dobby;
+			targetProxy = 94078D3D1C24062700CABB42 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -397,6 +528,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = PublicTodo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iflet.PublicTodo;
@@ -408,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = PublicTodo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iflet.PublicTodo;
@@ -482,6 +615,7 @@
 				94078D241C2404F600CABB42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94078D251C2404F600CABB42 /* Build configuration list for PBXNativeTarget "PublicTodoTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +624,7 @@
 				94078D271C2404F600CABB42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94078D281C2404F600CABB42 /* Build configuration list for PBXNativeTarget "PublicTodoUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +633,7 @@
 				94078D2A1C2404F600CABB42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C1110ECE9E8E1EA8E90AE2AF1C718AFB7D22C076",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C1110ECE9E8E1EA8E90AE2AF1C718AFB7D22C076" : 0,
+    "EE4DAFF70F73BB7F98F3BC5EC6049068B78965D9" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DD761F37-9CAE-4EA2-A4D9-1F470A823C14",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C1110ECE9E8E1EA8E90AE2AF1C718AFB7D22C076" : "publictodo-ios\/",
+    "EE4DAFF70F73BB7F98F3BC5EC6049068B78965D9" : "publictodo-ios\/dobby\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PublicTodo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PublicTodo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:yjkim\/publictodo-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C1110ECE9E8E1EA8E90AE2AF1C718AFB7D22C076"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:yjkim\/dobby.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EE4DAFF70F73BB7F98F3BC5EC6049068B78965D9"
+    }
+  ]
+}

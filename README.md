@@ -1,2 +1,2 @@
-# publictodo-ios
+# public todo (for ios)
 public todo ios app

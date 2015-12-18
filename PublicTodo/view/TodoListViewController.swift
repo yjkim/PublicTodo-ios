@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import Dobby
 
-class ViewController: UIViewController {
+class TodoListViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    private var menuSegue: DSegue!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        menuSegue = DSegue(source: self, destination: { () -> (destination: UIViewController, style: DSegue.Style) in
+//            let destination = UIStoryboard.ini
+        })
     }
 
     override func didReceiveMemoryWarning() {
