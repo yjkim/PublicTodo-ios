@@ -13,14 +13,14 @@ class TodoListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    private var menuSegue: DSegue!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        menuSegue = DSegue(source: self, destination: { () -> (destination: UIViewController, style: DSegue.Style) in
-//            let destination = UIStoryboard.ini
-        })
+    }
+    
+    deinit {
+        print(__FUNCTION__, "\(self)")
     }
 
     override func didReceiveMemoryWarning() {

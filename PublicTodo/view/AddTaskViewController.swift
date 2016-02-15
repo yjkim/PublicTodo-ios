@@ -7,13 +7,31 @@
 //
 
 import UIKit
+import Dobby
 
 class AddTaskViewController: UIViewController {
-
+    
+    let testViewmodel = DViewModel<Int>()
+    var alertController: UIAlertController!
+    var member = "멤버변수입니다."
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        testViewmodel.bind(self) { (model, oldModel) -> () in
+            //print("member: \(self.member)")
+        }
+        
+        let title = "제목"
+        let message = "내영"
+        
+        alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        let okAction = UIAlertAction(title: "확인", style: UIAlertActionStyle.Default) { (action) -> () in
+            //print("member: \(self.member)")
+        }
+        alertController.addAction(okAction)
+        presentViewController(alertController, animated: true, completion: nil)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +39,9 @@ class AddTaskViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    deinit {
+        print(__FUNCTION__, "\(self)")
+    }
 
     /*
     // MARK: - Navigation
