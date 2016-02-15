@@ -11,23 +11,30 @@ import Dobby
 
 class AddTaskViewController: UIViewController {
     
-    let testViewmodel = DViewModel<Int>()
+    let testViewModel = DViewModel<Int>()
     var alertController: UIAlertController!
     var member = "멤버변수입니다."
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testViewmodel.bind(self) { (model, oldModel) -> () in
+        testViewModel.bindThenFire(self) { (model, oldModel) -> () in
+            print("binded model: \(model)")
             //print("member: \(self.member)")
+        }
+        testViewModel.reloadHandler = { (viewModel) -> () in
+            viewModel.model = 777
         }
         
         let title = "제목"
         let message = "내영"
         
         alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
-        let okAction = UIAlertAction(title: "확인", style: UIAlertActionStyle.Default) { (action) -> () in
+        let okAction = UIAlertAction(title: "확인", style: UIAlertActionStyle.Default) { [weak self] (action) -> () in
             //print("member: \(self.member)")
+            print("alert, model: \(self?.testViewModel.model)")
+            self?.testViewModel.setNeedsReload()
+            self?.testViewModel.reloadIfNeeds()
         }
         alertController.addAction(okAction)
         presentViewController(alertController, animated: true, completion: nil)
